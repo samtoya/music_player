@@ -1,0 +1,1244 @@
+@font-face {
+  font-family: "simple-line-icons";
+  src: url("../fonts/simple-line-icons/Simple-Line-Icons.eot?v=2.4.0");
+  src: url("../fonts/simple-line-icons/Simple-Line-Icons.eot?v=2.4.0#iefix") format("embedded-opentype"), url("../fonts/simple-line-icons/Simple-Line-Icons.woff2?v=2.4.0") format("woff2"), url("../fonts/simple-line-icons/Simple-Line-Icons.ttf?v=2.4.0") format("truetype"), url("../fonts/simple-line-icons/Simple-Line-Icons.woff?v=2.4.0") format("woff"), url("../fonts/simple-line-icons/Simple-Line-Icons.svg?v=2.4.0#simple-line-icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+.icon-user, .icon-people, .icon-user-female, .icon-user-follow, .icon-user-following, .icon-user-unfollow, .icon-login, .icon-logout, .icon-emotsmile, .icon-phone, .icon-call-end, .icon-call-in, .icon-call-out, .icon-map, .icon-location-pin, .icon-direction, .icon-directions, .icon-compass, .icon-layers, .icon-menu, .icon-list, .icon-options-vertical, .icon-options, .icon-arrow-down, .icon-arrow-left, .icon-arrow-right, .icon-arrow-up, .icon-arrow-up-circle, .icon-arrow-left-circle, .icon-arrow-right-circle, .icon-arrow-down-circle, .icon-check, .icon-clock, .icon-plus, .icon-minus, .icon-close, .icon-event, .icon-exclamation, .icon-organization, .icon-trophy, .icon-screen-smartphone, .icon-screen-desktop, .icon-plane, .icon-notebook, .icon-mustache, .icon-mouse, .icon-magnet, .icon-energy, .icon-disc, .icon-cursor, .icon-cursor-move, .icon-crop, .icon-chemistry, .icon-speedometer, .icon-shield, .icon-screen-tablet, .icon-magic-wand, .icon-hourglass, .icon-graduation, .icon-ghost, .icon-game-controller, .icon-fire, .icon-eyeglass, .icon-envelope-open, .icon-envelope-letter, .icon-bell, .icon-badge, .icon-anchor, .icon-wallet, .icon-vector, .icon-speech, .icon-puzzle, .icon-printer, .icon-present, .icon-playlist, .icon-pin, .icon-picture, .icon-handbag, .icon-globe-alt, .icon-globe, .icon-folder-alt, .icon-folder, .icon-film, .icon-feed, .icon-drop, .icon-drawer, .icon-docs, .icon-doc, .icon-diamond, .icon-cup, .icon-calculator, .icon-bubbles, .icon-briefcase, .icon-book-open, .icon-basket-loaded, .icon-basket, .icon-bag, .icon-action-undo, .icon-action-redo, .icon-wrench, .icon-umbrella, .icon-trash, .icon-tag, .icon-support, .icon-frame, .icon-size-fullscreen, .icon-size-actual, .icon-shuffle, .icon-share-alt, .icon-share, .icon-rocket, .icon-question, .icon-pie-chart, .icon-pencil, .icon-note, .icon-loop, .icon-home, .icon-grid, .icon-graph, .icon-microphone, .icon-music-tone-alt, .icon-music-tone, .icon-earphones-alt, .icon-earphones, .icon-equalizer, .icon-like, .icon-dislike, .icon-control-start, .icon-control-rewind, .icon-control-play, .icon-control-pause, .icon-control-forward, .icon-control-end, .icon-volume-1, .icon-volume-2, .icon-volume-off, .icon-calendar, .icon-bulb, .icon-chart, .icon-ban, .icon-bubble, .icon-camrecorder, .icon-camera, .icon-cloud-download, .icon-cloud-upload, .icon-envelope, .icon-eye, .icon-flag, .icon-heart, .icon-info, .icon-key, .icon-link, .icon-lock, .icon-lock-open, .icon-magnifier, .icon-magnifier-add, .icon-magnifier-remove, .icon-paper-clip, .icon-paper-plane, .icon-power, .icon-refresh, .icon-reload, .icon-settings, .icon-star, .icon-symbol-female, .icon-symbol-male, .icon-target, .icon-credit-card, .icon-paypal, .icon-social-tumblr, .icon-social-twitter, .icon-social-facebook, .icon-social-instagram, .icon-social-linkedin, .icon-social-pinterest, .icon-social-github, .icon-social-google, .icon-social-reddit, .icon-social-skype, .icon-social-dribbble, .icon-social-behance, .icon-social-foursqare, .icon-social-soundcloud, .icon-social-spotify, .icon-social-stumbleupon, .icon-social-youtube, .icon-social-dropbox, .icon-social-vkontakte, .icon-social-steam {
+  font-family: "simple-line-icons";
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-user:before {
+  content: "\e005";
+}
+
+.icon-people:before {
+  content: "\e001";
+}
+
+.icon-user-female:before {
+  content: "\e000";
+}
+
+.icon-user-follow:before {
+  content: "\e002";
+}
+
+.icon-user-following:before {
+  content: "\e003";
+}
+
+.icon-user-unfollow:before {
+  content: "\e004";
+}
+
+.icon-login:before {
+  content: "\e066";
+}
+
+.icon-logout:before {
+  content: "\e065";
+}
+
+.icon-emotsmile:before {
+  content: "\e021";
+}
+
+.icon-phone:before {
+  content: "\e600";
+}
+
+.icon-call-end:before {
+  content: "\e048";
+}
+
+.icon-call-in:before {
+  content: "\e047";
+}
+
+.icon-call-out:before {
+  content: "\e046";
+}
+
+.icon-map:before {
+  content: "\e033";
+}
+
+.icon-location-pin:before {
+  content: "\e096";
+}
+
+.icon-direction:before {
+  content: "\e042";
+}
+
+.icon-directions:before {
+  content: "\e041";
+}
+
+.icon-compass:before {
+  content: "\e045";
+}
+
+.icon-layers:before {
+  content: "\e034";
+}
+
+.icon-menu:before {
+  content: "\e601";
+}
+
+.icon-list:before {
+  content: "\e067";
+}
+
+.icon-options-vertical:before {
+  content: "\e602";
+}
+
+.icon-options:before {
+  content: "\e603";
+}
+
+.icon-arrow-down:before {
+  content: "\e604";
+}
+
+.icon-arrow-left:before {
+  content: "\e605";
+}
+
+.icon-arrow-right:before {
+  content: "\e606";
+}
+
+.icon-arrow-up:before {
+  content: "\e607";
+}
+
+.icon-arrow-up-circle:before {
+  content: "\e078";
+}
+
+.icon-arrow-left-circle:before {
+  content: "\e07a";
+}
+
+.icon-arrow-right-circle:before {
+  content: "\e079";
+}
+
+.icon-arrow-down-circle:before {
+  content: "\e07b";
+}
+
+.icon-check:before {
+  content: "\e080";
+}
+
+.icon-clock:before {
+  content: "\e081";
+}
+
+.icon-plus:before {
+  content: "\e095";
+}
+
+.icon-minus:before {
+  content: "\e615";
+}
+
+.icon-close:before {
+  content: "\e082";
+}
+
+.icon-event:before {
+  content: "\e619";
+}
+
+.icon-exclamation:before {
+  content: "\e617";
+}
+
+.icon-organization:before {
+  content: "\e616";
+}
+
+.icon-trophy:before {
+  content: "\e006";
+}
+
+.icon-screen-smartphone:before {
+  content: "\e010";
+}
+
+.icon-screen-desktop:before {
+  content: "\e011";
+}
+
+.icon-plane:before {
+  content: "\e012";
+}
+
+.icon-notebook:before {
+  content: "\e013";
+}
+
+.icon-mustache:before {
+  content: "\e014";
+}
+
+.icon-mouse:before {
+  content: "\e015";
+}
+
+.icon-magnet:before {
+  content: "\e016";
+}
+
+.icon-energy:before {
+  content: "\e020";
+}
+
+.icon-disc:before {
+  content: "\e022";
+}
+
+.icon-cursor:before {
+  content: "\e06e";
+}
+
+.icon-cursor-move:before {
+  content: "\e023";
+}
+
+.icon-crop:before {
+  content: "\e024";
+}
+
+.icon-chemistry:before {
+  content: "\e026";
+}
+
+.icon-speedometer:before {
+  content: "\e007";
+}
+
+.icon-shield:before {
+  content: "\e00e";
+}
+
+.icon-screen-tablet:before {
+  content: "\e00f";
+}
+
+.icon-magic-wand:before {
+  content: "\e017";
+}
+
+.icon-hourglass:before {
+  content: "\e018";
+}
+
+.icon-graduation:before {
+  content: "\e019";
+}
+
+.icon-ghost:before {
+  content: "\e01a";
+}
+
+.icon-game-controller:before {
+  content: "\e01b";
+}
+
+.icon-fire:before {
+  content: "\e01c";
+}
+
+.icon-eyeglass:before {
+  content: "\e01d";
+}
+
+.icon-envelope-open:before {
+  content: "\e01e";
+}
+
+.icon-envelope-letter:before {
+  content: "\e01f";
+}
+
+.icon-bell:before {
+  content: "\e027";
+}
+
+.icon-badge:before {
+  content: "\e028";
+}
+
+.icon-anchor:before {
+  content: "\e029";
+}
+
+.icon-wallet:before {
+  content: "\e02a";
+}
+
+.icon-vector:before {
+  content: "\e02b";
+}
+
+.icon-speech:before {
+  content: "\e02c";
+}
+
+.icon-puzzle:before {
+  content: "\e02d";
+}
+
+.icon-printer:before {
+  content: "\e02e";
+}
+
+.icon-present:before {
+  content: "\e02f";
+}
+
+.icon-playlist:before {
+  content: "\e030";
+}
+
+.icon-pin:before {
+  content: "\e031";
+}
+
+.icon-picture:before {
+  content: "\e032";
+}
+
+.icon-handbag:before {
+  content: "\e035";
+}
+
+.icon-globe-alt:before {
+  content: "\e036";
+}
+
+.icon-globe:before {
+  content: "\e037";
+}
+
+.icon-folder-alt:before {
+  content: "\e039";
+}
+
+.icon-folder:before {
+  content: "\e089";
+}
+
+.icon-film:before {
+  content: "\e03a";
+}
+
+.icon-feed:before {
+  content: "\e03b";
+}
+
+.icon-drop:before {
+  content: "\e03e";
+}
+
+.icon-drawer:before {
+  content: "\e03f";
+}
+
+.icon-docs:before {
+  content: "\e040";
+}
+
+.icon-doc:before {
+  content: "\e085";
+}
+
+.icon-diamond:before {
+  content: "\e043";
+}
+
+.icon-cup:before {
+  content: "\e044";
+}
+
+.icon-calculator:before {
+  content: "\e049";
+}
+
+.icon-bubbles:before {
+  content: "\e04a";
+}
+
+.icon-briefcase:before {
+  content: "\e04b";
+}
+
+.icon-book-open:before {
+  content: "\e04c";
+}
+
+.icon-basket-loaded:before {
+  content: "\e04d";
+}
+
+.icon-basket:before {
+  content: "\e04e";
+}
+
+.icon-bag:before {
+  content: "\e04f";
+}
+
+.icon-action-undo:before {
+  content: "\e050";
+}
+
+.icon-action-redo:before {
+  content: "\e051";
+}
+
+.icon-wrench:before {
+  content: "\e052";
+}
+
+.icon-umbrella:before {
+  content: "\e053";
+}
+
+.icon-trash:before {
+  content: "\e054";
+}
+
+.icon-tag:before {
+  content: "\e055";
+}
+
+.icon-support:before {
+  content: "\e056";
+}
+
+.icon-frame:before {
+  content: "\e038";
+}
+
+.icon-size-fullscreen:before {
+  content: "\e057";
+}
+
+.icon-size-actual:before {
+  content: "\e058";
+}
+
+.icon-shuffle:before {
+  content: "\e059";
+}
+
+.icon-share-alt:before {
+  content: "\e05a";
+}
+
+.icon-share:before {
+  content: "\e05b";
+}
+
+.icon-rocket:before {
+  content: "\e05c";
+}
+
+.icon-question:before {
+  content: "\e05d";
+}
+
+.icon-pie-chart:before {
+  content: "\e05e";
+}
+
+.icon-pencil:before {
+  content: "\e05f";
+}
+
+.icon-note:before {
+  content: "\e060";
+}
+
+.icon-loop:before {
+  content: "\e064";
+}
+
+.icon-home:before {
+  content: "\e069";
+}
+
+.icon-grid:before {
+  content: "\e06a";
+}
+
+.icon-graph:before {
+  content: "\e06b";
+}
+
+.icon-microphone:before {
+  content: "\e063";
+}
+
+.icon-music-tone-alt:before {
+  content: "\e061";
+}
+
+.icon-music-tone:before {
+  content: "\e062";
+}
+
+.icon-earphones-alt:before {
+  content: "\e03c";
+}
+
+.icon-earphones:before {
+  content: "\e03d";
+}
+
+.icon-equalizer:before {
+  content: "\e06c";
+}
+
+.icon-like:before {
+  content: "\e068";
+}
+
+.icon-dislike:before {
+  content: "\e06d";
+}
+
+.icon-control-start:before {
+  content: "\e06f";
+}
+
+.icon-control-rewind:before {
+  content: "\e070";
+}
+
+.icon-control-play:before {
+  content: "\e071";
+}
+
+.icon-control-pause:before {
+  content: "\e072";
+}
+
+.icon-control-forward:before {
+  content: "\e073";
+}
+
+.icon-control-end:before {
+  content: "\e074";
+}
+
+.icon-volume-1:before {
+  content: "\e09f";
+}
+
+.icon-volume-2:before {
+  content: "\e0a0";
+}
+
+.icon-volume-off:before {
+  content: "\e0a1";
+}
+
+.icon-calendar:before {
+  content: "\e075";
+}
+
+.icon-bulb:before {
+  content: "\e076";
+}
+
+.icon-chart:before {
+  content: "\e077";
+}
+
+.icon-ban:before {
+  content: "\e07c";
+}
+
+.icon-bubble:before {
+  content: "\e07d";
+}
+
+.icon-camrecorder:before {
+  content: "\e07e";
+}
+
+.icon-camera:before {
+  content: "\e07f";
+}
+
+.icon-cloud-download:before {
+  content: "\e083";
+}
+
+.icon-cloud-upload:before {
+  content: "\e084";
+}
+
+.icon-envelope:before {
+  content: "\e086";
+}
+
+.icon-eye:before {
+  content: "\e087";
+}
+
+.icon-flag:before {
+  content: "\e088";
+}
+
+.icon-heart:before {
+  content: "\e08a";
+}
+
+.icon-info:before {
+  content: "\e08b";
+}
+
+.icon-key:before {
+  content: "\e08c";
+}
+
+.icon-link:before {
+  content: "\e08d";
+}
+
+.icon-lock:before {
+  content: "\e08e";
+}
+
+.icon-lock-open:before {
+  content: "\e08f";
+}
+
+.icon-magnifier:before {
+  content: "\e090";
+}
+
+.icon-magnifier-add:before {
+  content: "\e091";
+}
+
+.icon-magnifier-remove:before {
+  content: "\e092";
+}
+
+.icon-paper-clip:before {
+  content: "\e093";
+}
+
+.icon-paper-plane:before {
+  content: "\e094";
+}
+
+.icon-power:before {
+  content: "\e097";
+}
+
+.icon-refresh:before {
+  content: "\e098";
+}
+
+.icon-reload:before {
+  content: "\e099";
+}
+
+.icon-settings:before {
+  content: "\e09a";
+}
+
+.icon-star:before {
+  content: "\e09b";
+}
+
+.icon-symbol-female:before {
+  content: "\e09c";
+}
+
+.icon-symbol-male:before {
+  content: "\e09d";
+}
+
+.icon-target:before {
+  content: "\e09e";
+}
+
+.icon-credit-card:before {
+  content: "\e025";
+}
+
+.icon-paypal:before {
+  content: "\e608";
+}
+
+.icon-social-tumblr:before {
+  content: "\e00a";
+}
+
+.icon-social-twitter:before {
+  content: "\e009";
+}
+
+.icon-social-facebook:before {
+  content: "\e00b";
+}
+
+.icon-social-instagram:before {
+  content: "\e609";
+}
+
+.icon-social-linkedin:before {
+  content: "\e60a";
+}
+
+.icon-social-pinterest:before {
+  content: "\e60b";
+}
+
+.icon-social-github:before {
+  content: "\e60c";
+}
+
+.icon-social-google:before {
+  content: "\e60d";
+}
+
+.icon-social-reddit:before {
+  content: "\e60e";
+}
+
+.icon-social-skype:before {
+  content: "\e60f";
+}
+
+.icon-social-dribbble:before {
+  content: "\e00d";
+}
+
+.icon-social-behance:before {
+  content: "\e610";
+}
+
+.icon-social-foursqare:before {
+  content: "\e611";
+}
+
+.icon-social-soundcloud:before {
+  content: "\e612";
+}
+
+.icon-social-spotify:before {
+  content: "\e613";
+}
+
+.icon-social-stumbleupon:before {
+  content: "\e614";
+}
+
+.icon-social-youtube:before {
+  content: "\e008";
+}
+
+.icon-social-dropbox:before {
+  content: "\e00c";
+}
+
+.icon-social-vkontakte:before {
+  content: "\e618";
+}
+
+.icon-social-steam:before {
+  content: "\e620";
+}
+
+@font-face {
+  font-family: 'MarkPro';
+  src: url("../fonts/mark-pro/MarkPro-Black.eot");
+  src: url("../fonts/mark-pro/MarkPro-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/mark-pro/MarkPro-Black.woff") format("woff"), url("../fonts/mark-pro/MarkPro-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MarkPro-BoldItalic';
+  src: url("../fonts/mark-pro/MarkPro-BoldItalic.eot");
+  src: url("../fonts/mark-pro/MarkPro-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/mark-pro/MarkPro-BoldItalic.woff") format("woff"), url("../fonts/mark-pro/MarkPro-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'MarkPro-BlackItalic';
+  src: url("../fonts/mark-pro/MarkPro-BlackItalic.eot");
+  src: url("../fonts/mark-pro/MarkPro-BlackItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/mark-pro/MarkPro-BlackItalic.woff") format("woff"), url("../fonts/mark-pro/MarkPro-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'MarkPro-Book';
+  src: url("../fonts/mark-pro/MarkPro-Book.eot");
+  src: url("../fonts/mark-pro/MarkPro-Book.eot?#iefix") format("embedded-opentype"), url("../fonts/mark-pro/MarkPro-Book.woff") format("woff"), url("../fonts/mark-pro/MarkPro-Book.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MarkPro';
+  src: url("../fonts/mark-pro/MarkPro-Bold.eot");
+  src: url("../fonts/mark-pro/MarkPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/mark-pro/MarkPro-Bold.woff") format("woff"), url("../fonts/mark-pro/MarkPro-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MarkPro';
+  src: url("../fonts/mark-pro/MarkPro.eot");
+  src: url("../fonts/mark-pro/MarkPro.eot?#iefix") format("embedded-opentype"), url("../fonts/mark-pro/MarkPro.woff") format("woff"), url("../fonts/mark-pro/MarkPro.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MarkPro';
+  src: url("../fonts/mark-pro/MarkPro_1.eot");
+  src: url("../fonts/mark-pro/MarkPro_1.eot?#iefix") format("embedded-opentype"), url("../fonts/mark-pro/MarkPro_1.woff") format("woff"), url("../fonts/mark-pro/MarkPro_1.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.search-wrapper {
+  width: 100vw;
+  display: flex;
+  background-color: #fff;
+  height: 300px;
+  overflow-y: hidden;
+  margin: 0;
+  padding: 0;
+  border-bottom: 2px solid #db2642;
+}
+.search-wrapper .search-box {
+  box-sizing: border-box;
+  flex: 1;
+  border: 1px solid #000;
+}
+
+.ellipsis-one-line {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+body {
+  font-family: 'MarkPro-Book', sans-serif;
+  font-weight: 100;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  cursor: pointer;
+}
+
+.mask {
+  background-color: #4d4d4d;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.1;
+}
+
+.hide {
+  display: none;
+}
+
+.player-wrapper {
+  z-index: 2;
+}
+.player-wrapper .player {
+  z-index: 500;
+  font-family: 'MarkPro-Book', sans-serif;
+  font-weight: 100;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background-color: #db2642;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 0;
+  justify-content: space-between;
+}
+.player-wrapper .player .progress {
+  position: absolute;
+  top: -5px;
+  left: 0;
+  background-color: #ed93a1;
+  height: 5px;
+  width: 100%;
+}
+.player-wrapper .player .progress .progress-bar {
+  width: 27%;
+  background-color: #9b1a2e;
+  height: inherit;
+}
+.player-wrapper .player .time, .player-wrapper .player .shuffle-indicator {
+  color: #FFF;
+  font-size: 12px;
+  font-style: italic;
+}
+.player-wrapper .player .controls-wrapper {
+  flex: 1 15%;
+}
+.player-wrapper .player .controls-wrapper .controls {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: space-around;
+  padding: 15px 0;
+}
+.player-wrapper .player .controls-wrapper .controls .control {
+  font-size: 18px;
+  color: #ed93a1;
+  margin-right: 5px;
+  cursor: pointer;
+  padding: 15px;
+}
+.player-wrapper .player .controls-wrapper .controls .control.active {
+  color: #FFF;
+}
+.player-wrapper .player .controls-wrapper .controls .icon-control-play,
+.player-wrapper .player .controls-wrapper .controls .icon-control-pause {
+  font-size: 30px;
+}
+.player-wrapper .player .artwork, .player-wrapper .player .play-area, .player-wrapper .player .volume {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  margin-right: 15px;
+}
+.player-wrapper .player .artwork {
+  flex: 1 15%;
+}
+@media screen and (max-width: 768px) {
+  .player-wrapper .player .artwork {
+    display: none;
+  }
+}
+.player-wrapper .player .artwork .song-info .song-title,
+.player-wrapper .player .artwork .song-info .artist-name {
+  color: #FFF;
+  font-weight: 100;
+}
+.player-wrapper .player .artwork .song-info .song-title {
+  font-size: 13px;
+  line-height: 20px;
+}
+.player-wrapper .player .artwork .song-info .song-title a {
+  color: #FFF;
+  text-decoration: none;
+}
+.player-wrapper .player .artwork .song-info .song-title a:hover {
+  text-decoration: underline;
+}
+.player-wrapper .player .artwork .song-info .artist-name {
+  margin: 0;
+  padding: 0;
+  font-weight: 100;
+  font-size: 10px;
+  line-height: 14px;
+  letter-spacing: .015em;
+}
+.player-wrapper .player .artwork .song-info .artist-name a {
+  color: #FFF;
+  text-decoration: none;
+}
+.player-wrapper .player .artwork .song-info .artist-name a:hover {
+  text-decoration: underline;
+}
+.player-wrapper .player .play-area {
+  flex: 2 40%;
+  background-color: #df3c55;
+  box-sizing: border-box;
+  padding: 8px;
+  align-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .player-wrapper .player .play-area {
+    display: none;
+  }
+}
+.player-wrapper .player .play-area .artwork-wrapper {
+  margin-right: 10px;
+}
+.player-wrapper .player .play-area .artwork-wrapper .art {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+}
+.player-wrapper .player .play-area .track-info {
+  display: flex;
+  flex-direction: column;
+}
+.player-wrapper .player .play-area .track-info .song-title, .player-wrapper .player .play-area .track-info .artist-name {
+  text-align: center;
+}
+.player-wrapper .player .play-area .track-info .song-title > a, .player-wrapper .player .play-area .track-info .artist-name > a {
+  color: #FFF;
+  text-decoration: none;
+  font-size: 11px;
+}
+.player-wrapper .player .play-area .track-info .song-title a {
+  font-size: 16px;
+}
+.player-wrapper .player .play-area .aftown-logo {
+  margin-top: 5px;
+}
+.player-wrapper .player .play-area .aftown-logo img {
+  opacity: .3;
+}
+.player-wrapper .player .play-area .actions {
+  text-align: center;
+  margin-bottom: 5px;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: space-around;
+  width: 75%;
+  margin: 0 auto;
+}
+.player-wrapper .player .volume-wrapper {
+  flex: 1 15%;
+  align-content: center;
+  align-items: center;
+  width: 30%;
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+.player-wrapper .player .volume-wrapper a {
+  text-decoration: none;
+}
+.player-wrapper .player .volume-wrapper a .control {
+  font-size: 16px;
+  color: #FFF;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.player-wrapper .player .volume-wrapper .volume {
+  width: 100%;
+  height: 5px;
+  background-color: #ed93a1;
+  border-radius: 3px;
+}
+.player-wrapper .player .volume-wrapper .volume .volume-bar {
+  background-color: #9b1a2e;
+  height: inherit;
+}
+.player-wrapper .playlist-wrapper {
+  position: absolute;
+  top: 0;
+  right: -5000px;
+  width: 305px;
+  z-index: 400;
+  height: calc(100vh - 60px);
+  box-shadow: 0 0 4px #f2f2f2;
+  background-color: #FFF;
+  border-left: thin solid #cccccc;
+  display: flex;
+  flex-direction: column;
+}
+.player-wrapper .playlist-wrapper .playlist-header {
+  border-bottom: thin solid #cccccc;
+  padding: 20px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.player-wrapper .playlist-wrapper .playlist-header a {
+  cursor: pointer;
+  font-size: 12px;
+}
+.player-wrapper .playlist-wrapper .playlist-body {
+  height: 100vh;
+  overflow-y: scroll;
+}
+.player-wrapper .playlist-wrapper .playlist-body .playlist-tracks {
+  padding: 10px;
+}
+.player-wrapper .playlist-wrapper .playlist-body .playlist-tracks .track {
+  position: relative;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 5px;
+  box-shadow: 0 1px 0 #f2f2f2;
+  padding: 8px 0;
+  box-sizing: border-box;
+}
+.player-wrapper .playlist-wrapper .playlist-body .playlist-tracks .track:first-of-type {
+  padding-top: 0;
+}
+.player-wrapper .playlist-wrapper .playlist-body .playlist-tracks .track .artwork {
+  margin-right: 5px;
+  position: relative;
+  width: 45px;
+  height: 45px;
+  flex: 1 10%;
+}
+.player-wrapper .playlist-wrapper .playlist-body .playlist-tracks .track .artwork img {
+  width: inherit;
+  height: inherit;
+  border-radius: 5px;
+}
+.player-wrapper .playlist-wrapper .playlist-body .playlist-tracks .track .artwork .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  color: #FFF;
+}
+.player-wrapper .playlist-wrapper .playlist-body .playlist-tracks .track .artwork .overlay .mask {
+  width: inherit;
+  height: inherit;
+  background-color: #333;
+  opacity: .5;
+  z-index: 2;
+  border-radius: 5px;
+}
+.player-wrapper .playlist-wrapper .playlist-body .playlist-tracks .track .artwork .overlay i {
+  z-index: 1;
+  font-size: 16px;
+  color: #FFF;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+.player-wrapper .playlist-wrapper .playlist-body .playlist-tracks .track .track-details {
+  flex: 2 80%;
+  margin-right: 10px;
+}
+.player-wrapper .playlist-wrapper .playlist-body .playlist-tracks .track .track-details .song-title {
+  font-size: 14px;
+}
+.player-wrapper .playlist-wrapper .playlist-body .playlist-tracks .track .track-details .song-title a {
+  color: inherit;
+  text-decoration: none;
+}
+.player-wrapper .playlist-wrapper .playlist-body .playlist-tracks .track .track-details .artist-info {
+  font-size: 12px;
+}
+.player-wrapper .playlist-wrapper .playlist-body .playlist-tracks .track .track-details .artist-info .artist-name a {
+  color: inherit;
+  text-decoration: none;
+}
+.player-wrapper .playlist-wrapper .playlist-body .playlist-tracks .track .options {
+  flex: 1 10%;
+}
+.player-wrapper .playlist-wrapper .playlist-body .playlist-tracks .track .options a {
+  color: gray;
+  text-decoration: none;
+}
+.player-wrapper .playlist-wrapper .playlist-body .playlist-tracks .track .options .options-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+  z-index: 1;
+  background-color: #FFF;
+  border-radius: 10px;
+  box-shadow: 0 0 2px #cccccc;
+}
+.player-wrapper .playlist-wrapper .playlist-body .playlist-tracks .track .options .options-wrapper .header {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 0 2px #d9d9d9;
+  border-radius: 10px;
+  padding: 15px 10px;
+}
+.player-wrapper .playlist-wrapper .playlist-body .playlist-tracks .track .options .options-wrapper .header .artwork .art {
+  width: 40px;
+  height: 40px;
+}
+.player-wrapper .playlist-wrapper .playlist-body .playlist-tracks .track .options .options-wrapper .header .track-details {
+  font-size: 11px;
+}
+.player-wrapper .playlist-wrapper .playlist-body .playlist-tracks .track .options .options-wrapper .options-list {
+  margin: 0;
+  padding: 0;
+}
+.player-wrapper .playlist-wrapper .playlist-body .playlist-tracks .track .options .options-wrapper .options-list > li {
+  display: flex;
+  list-style-type: none;
+  border-bottom: thin solid #f2f2f2;
+}
+.player-wrapper .playlist-wrapper .playlist-body .playlist-tracks .track .options .options-wrapper .options-list > li:last-of-type {
+  border-bottom: none;
+}
+.player-wrapper .playlist-wrapper .playlist-body .playlist-tracks .track .options .options-wrapper .options-list > li a {
+  font-size: 13px;
+  display: block;
+  padding: 10px 30px 10px 15px;
+  cursor: pointer;
+  transition: all .2s ease;
+}
+.player-wrapper .playlist-wrapper .playlist-body .playlist-tracks .track .options .options-wrapper .options-list > li a:hover {
+  color: #db2642;
+}
+.player-wrapper .playlist-wrapper .playlist-body .playlist-tracks .track .options .options-wrapper .options-list > li a i {
+  margin-right: 10px;
+}
+.player-wrapper .playlist-wrapper .playlist-body .playlist-tracks .empty {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 500px;
+  overflow-y: hidden;
+}
+.player-wrapper .playlist-wrapper .playlist-body .playlist-tracks .empty img {
+  opacity: .8;
+  width: 50px;
+  height: 50px;
+}
+.player-wrapper .playlist-wrapper .playlist-body .playlist-tracks .empty p {
+  font-size: 12px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=main.css.map */

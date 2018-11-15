@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>aftownmusic player</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="player-wrapper">
+        <div class="playlist-wrapper" id="playlist-container">
+          <div class="playlist-header">
+            <h4><i class="icon-playlist"></i> Queue</h4>
+            <div class="options">
+              <a id="shuffle"> <i class="control icon-shuffle"></i> Shuffle </a>
+            </div>
+          </div>
+
+          <div class="playlist-body">
+            <div class="playlist-tracks">
+              <div class="track">
+                <div class="artwork">
+                  <img src="images/stonebwoy.jpg" alt="" />
+                  <div class="overlay hide">
+                    <i class="control icon-volume-2"></i>
+                    <i class="icon-control-play"></i>
+                    <i class="icon-control-pause"></i>
+                    <div class="mask"></div>
+                  </div>
+                </div>
+                <div class="track-details ellipsis-one-line">
+                  <div class="song-title ellipsis-one-line">
+                    <a href="#"> Dede (ft. Kelvynboy & King Promise) </a>
+                  </div>
+                  <div class="artist-info">
+                    by
+                    <span class="artist-name"> <a href="#">Stonebwoy</a> </span>
+                  </div>
+                </div>
+                <div class="options">
+                  <a onclick="toggleOptions(this)">
+                    <i class="icon-options"></i>
+                  </a>
+
+                  <div class="options-wrapper hide">
+                    <div class="header">
+                      <div class="artwork">
+                        <img src="images/stonebwoy.jpg" alt="" class="art" />
+                      </div>
+                      <div class="track-details">
+                        Dede (ft. Kelvynboy &amp; King Promise)<br />
+                        by
+                        <span class="artist-name">
+                          <a href="#">Stonebwoy</a>
+                        </span>
+                      </div>
+                    </div>
+
+                    <ul class="options-list">
+                      <li>
+                        <a> <i class="icon-link"></i> get song </a>
+                      </li>
+                      <li>
+                        <a> <i class="icon-info"></i> view in album </a>
+                      </li>
+                      <li>
+                        <a> <i class="icon-share"></i> share </a>
+                      </li>
+                      <li>
+                        <a> <i class="icon-heart"></i> love </a>
+                      </li>
+                      <li>
+                        <a> <i class="icon-trash"></i> remove from queue </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="player">
+          <div class="progress"><div class="progress-bar"></div></div>
+
+          <div class="controls-wrapper">
+            <div class="controls">
+              <a id="rewind" class="control icon-control-rewind"></a>
+              <a id="play" class="control icon-control-play"></a>
+              <a id="pause" class="control icon-control-pause active"></a>
+              <a id="forward" class="control icon-control-forward"></a>
+              <a id="repeat" class="control icon-loop"></a>
+              <a id="playlist-toggler" class="control icon-playlist"></a>
+            </div>
+          </div>
+
+          <div class="play-area">
+            <div class="artwork-wrapper">
+              <img
+                src="images/default.png"
+                width="50px"
+                id="artwork"
+                alt="ebony sponsor"
+                class="art"
+              />
+            </div>
+
+            <div id="remaining" class="time"></div>
+
+            <div class="track-info">
+              <div class="song-title ellipsis-one-line">
+                <a id="title" href="javascript:void(0);">Sponsor</a>
+              </div>
+              <div class="artist-name ellipsis-one-line">
+                <a id="name" href="javascript:void(0);">
+                  Nipa Ny3 Ft Hakeem Bawa (Prod By Owusad Beatz)
+                </a>
+              </div>
+            </div>
+
+            <div class="shuffle-indicator">
+              <i class="control icon-shuffle"></i>
+            </div>
+
+            <div id="total" class="time"></div>
+
+            <div class="aftown-logo">
+              <img src="images/logo_icon.png" alt="" width="30px" />
+            </div>
+          </div>
+
+          <div class="volume-wrapper">
+            <a><i class="control icon-volume-1"></i></a>
+            <!--
+              <a><i class="control icon-volume-2"></i></a>
+              <a><i class="control icon-volume-3"></i></a>
+              <a><i class="control icon-volume-off"></i></a>
+            -->
+            <div class="volume">
+              <div id="volume-bar" class="volume-bar"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

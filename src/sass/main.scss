@@ -1,0 +1,423 @@
+@charset "utf-8";
+
+@import "variables";
+@import "typography";
+@import "search";
+@import "utils";
+
+body {
+    font-family: 'MarkPro-Book', sans-serif;
+    font-weight: 100;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+a {cursor: pointer;}
+
+.mask {
+    background-color: lighten($aftown-accent, 10%);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .1
+}
+
+.hide {
+    display: none;
+}
+
+.player-wrapper {
+    z-index: 2;
+    // position: fixed;
+    .player {
+        z-index: 500;
+        font-family: 'MarkPro-Book', sans-serif;
+        font-weight: 100;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        background-color: $aftown-primary;
+        width: 100%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        padding: 10px;
+        box-sizing: border-box;
+        margin: 0;
+        justify-content: space-between;
+
+        .progress {
+            position: absolute;
+            top: -5px;
+            left: 0;
+            background-color: lighten($aftown-primary, 25%);
+            height: 5px;
+            width: 100%;
+            .progress-bar {
+                width: 27%;
+                background-color: darken($aftown-primary, 15%);
+                height: inherit;
+            }
+        }
+
+        .time, .shuffle-indicator {
+            color: $white;
+            font-size: 12px;
+            font-style: italic;
+        }
+
+        .controls-wrapper {
+            flex: 1 15%;
+            .controls {
+                display: flex;
+                align-content: center;
+                align-items: center;
+                justify-content: space-around;
+                padding: 15px 0;
+                .control {
+                    font-size: 18px;
+                    color: lighten($aftown-primary, 25%);
+                    margin-right: 5px;
+                    cursor: pointer;
+                    padding: 15px;
+                    &.active {
+                        color: #FFF;
+                    }
+                }
+
+                .icon-control-play,
+                .icon-control-pause {
+                    font-size: 30px;
+                }
+            }
+        }
+
+        .artwork, .play-area, .volume {
+            display: flex;
+            align-content: center;
+            align-items: center;
+            margin-right: 15px;
+        }
+
+        .artwork {
+            flex: 1 15%;
+            @media screen and (max-width: 768px) {
+                display: none;
+            }
+
+            .song-info {
+                .song-title,
+                .artist-name {
+                    color: $white;
+                    font-weight: 100;
+                }
+                .song-title {
+                    font-size: 13px;
+                    line-height: 20px;
+                    a {
+                        color: $white;
+                        text-decoration: none;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                .artist-name {
+                    margin: 0;
+                    padding: 0;
+                    font-weight: 100;
+                    font-size: 10px;
+                    line-height: 14px;
+                    letter-spacing: .015em;
+                    a {
+                        color: $white;
+                        text-decoration: none;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+
+        .play-area {
+            flex: 2 40%;
+            background-color: lighten($aftown-primary, 5%);
+            box-sizing: border-box;
+            padding: 8px;
+            align-content: center;
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+
+            @media screen and (max-width: 768px) {
+                display: none;
+            }
+
+            .artwork-wrapper {
+                margin-right: 10px;
+                .art {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 25px;
+                }
+            }
+
+            .track-info {
+                display: flex;
+                flex-direction: column;
+                .song-title, .artist-name {
+                    text-align: center;
+                    > a {
+                        color: $white;
+                        text-decoration: none;
+                        font-size: 11px;
+                    }
+                } 
+                .song-title a { font-size: 16px; }
+            }
+
+            .aftown-logo {
+                margin-top: 5px;
+                img {
+                    opacity: .3;
+                }
+            }
+
+            .actions {
+                text-align: center;
+                margin-bottom: 5px;
+                display: flex;
+                align-content: center;
+                align-items: center;
+                justify-content: space-around;
+                width: 75%;
+                margin: 0 auto;
+            }
+        }
+
+        .volume-wrapper {
+            flex: 1 15%;
+            align-content: center;
+            align-items: center;
+            width: 30%;
+            display: flex;
+            align-content: center;
+            align-items: center;
+            a {
+                text-decoration: none;
+                .control {
+                    font-size: 16px;
+                    color: #FFF;
+                    margin-right: 5px;
+                    cursor: pointer;
+                }
+            }
+            .volume {
+                width: 100%;
+                height: 5px;
+                background-color: lighten($aftown-primary, 25%);
+                border-radius: 3px;
+                .volume-bar {
+                    background-color: darken($aftown-primary, 15%);
+                    // width: 8%;
+                    height: inherit;
+                }
+            }
+        }
+    }
+
+    // Playlist
+    .playlist-wrapper {
+        position: absolute;
+        top: 0;
+        right: -5000px;
+        width: 305px;
+        z-index: 400;
+        height: calc(100vh - 60px);
+        box-shadow: 0 0 4px darken($white, 5%);
+        // background-color: $aftown-accent;
+        background-color: $white;
+        border-left: thin solid darken($white, 20%);
+        display: flex;
+        flex-direction: column;
+        .playlist-header {
+            border-bottom: thin solid darken($white, 20%);
+            padding: 20px 10px;
+            display: flex;
+            justify-content: space-between;
+            a {
+                cursor: pointer;
+                font-size: 12px;
+            }
+        }
+        .playlist-body {
+            height: 100vh;
+            overflow-y: scroll;
+            .playlist-tracks {
+                padding: 10px;
+                .track {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    align-content: center;
+                    margin-bottom: 5px;
+                    box-shadow: 0 1px 0 darken($white, 5%);
+                    padding: 8px 0;
+                    box-sizing: border-box;
+                    &:first-of-type {
+                        padding-top: 0;
+                    }
+                    // border-bottom: thin solid darken($white, 10%);
+                    .artwork {
+                        margin-right: 5px;
+                        position: relative;
+                        width: 45px;
+                        height: 45px;
+                        flex: 1 10%;
+                        img {
+                            width: inherit;
+                            height: inherit;
+                            border-radius: 5px;
+                        }
+                        .overlay {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: inherit;
+                            height: inherit;
+                            color: $white;
+                            .mask {
+                                width: inherit;
+                                height: inherit;
+                                background-color: $aftown-accent;
+                                opacity: .5;
+                                z-index: 2;
+                                border-radius: 5px;
+                            }
+                            i {
+                                z-index: 1;
+                                font-size: 16px;
+                                color: $white;
+                                position: absolute;
+                                top: 15px;
+                                left: 15px;
+                            }
+                        }
+                    }
+                    .track-details {
+                        flex: 2 80%;
+                        margin-right: 10px;
+                        .song-title {
+                            font-size: 14px;
+                            a {
+                                color: inherit;
+                                text-decoration: none;
+                            }
+                        }
+                        .artist-info {
+                            font-size: 12px;
+                            .artist-name {
+                                a {
+                                    color: inherit;
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+                    }
+                    .options {
+                        // margin-right: 1px;
+                        flex: 1 10%;
+                        a {
+                            color: lighten($aftown-accent, 30%);
+                            text-decoration: none;
+                        }
+                        .options-wrapper {
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            width: 200px;
+                            z-index: 1;
+                            background-color: $white;
+                            border-radius: 10px;
+                            box-shadow: 0 0 2px darken($white, 20%);
+                            .header {
+                                display: flex;
+                                justify-content: space-between;
+                                box-shadow: 0 0 2px lighten($aftown-accent, 65%);
+                                border-radius: 10px;
+                                padding: 15px 10px;
+                                .artwork {
+                                    .art {
+                                        width: 40px;
+                                        height: 40px;
+                                    }
+                                }
+                                .track-details {
+                                    font-size: 11px;
+                                }
+                            }
+                            .options-list {
+                                margin: 0;
+                                padding: 0;
+                                > li {
+                                    display: flex;
+                                    // justify-content: space-between;
+                                    // align-items: center;
+                                    // align-content: center;
+                                    list-style-type: none;
+                                    border-bottom: thin solid lighten($aftown-accent, 75%);
+                                    &:last-of-type {
+                                        border-bottom: none;
+                                    }
+                                    a {
+                                        font-size: 13px;
+                                        display: block;
+                                        padding: 10px 30px 10px 15px;
+                                        cursor: pointer;
+                                        transition: all .2s ease;
+                                        &:hover {
+                                            color: $aftown-primary;
+                                        }
+                                        // padding: 10px 25px;
+                                        i {
+                                            margin-right: 10px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .empty {
+                    display: flex;
+                    flex-direction: column;
+                    align-content: center;
+                    align-items: center;
+                    justify-content: center;
+                    // margin: 0 auto;
+                    width: 100%;
+                    height: 500px;
+                    overflow-y: hidden; 
+                    // border: thin solid $aftown-accent;
+                    img {
+                        opacity: .8;
+                        width: 50px;
+                        height: 50px;
+                    }
+                    p {
+                        font-size: 12px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        .playlist-footer {}
+    }
+}

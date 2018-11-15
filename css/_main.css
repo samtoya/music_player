@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+
+.player {
+    position: fixed;
+    bottom: 0;
+    background-color: #db2642;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 0;
+    justify-content: space-between;
+}
+
+/* ============= Volume Area ===============*/
+.player .volume {
+    flex: 1;
+}
+
+.player .progress,
+.player .volume .volume-bar {
+    width: 100%;
+    height: 5px;
+}
+
+.player .volume .volume-bar {
+    width: 50%;
+    margin-left: 5px;
+}
+
+/* ============= Volume Area ===============*/
+@media(max-width: 768px) {
+    .player { height: 60px; }
+
+    .player .artwork {
+        display: none;
+    }
+}
